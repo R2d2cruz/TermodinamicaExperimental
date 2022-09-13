@@ -36,7 +36,7 @@ float temp(float v)
 
 float time()
 {
-  return (millis() / 1000);
+  return ((millis() / 100)/10.0);
 }
 
 void loop() {
