@@ -1,14 +1,23 @@
-#define RB 9730.0
-#define VT 4.65
+#define RB 97800.0
+#define VT 5.01
 #define LED 3
 #define termoRes A5
 
 
 /*
+ * 100k = 97.3 k
+ * 10k = 9.84k
+ * 
  * 
  * 10K:
  * 90c = 80 bit 915.73ohm
  * 0c = 770 bit 41770.76 ohm 
+ * 
+ * 
+ * 100k:
+ * 0c = 736 bit 332479.62
+ * 90c = 80 bit 8932.86
+ * 
  * 
  */
 
@@ -37,5 +46,5 @@ void loop() {
   v = analogRead(termoRes);
   Serial.print(v);
   Serial.print("\t");
-  Serial.println(rT(v));
+  Serial.println(vV(v));
 }

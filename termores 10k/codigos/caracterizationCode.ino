@@ -1,4 +1,4 @@
-#define RB 97300.0
+#define RB 9730.0
 #define VT 4.65
 #define LED 3
 #define termoRes A5
