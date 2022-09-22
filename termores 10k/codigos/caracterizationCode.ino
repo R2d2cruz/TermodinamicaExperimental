@@ -26,7 +26,7 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(LED, OUTPUT);
   Serial.begin(9600);
-  vB = analogRead(analogRead(termoRes));
+  vB = analogRead(termoRes);
   digitalWrite(LED, LOW);
 }
 
